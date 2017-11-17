@@ -180,7 +180,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">Problem 1</a>
+  <a href="p8105_hw6_problem1.html">Problem 1</a>
 </li>
 <li>
   <a href="https://timrain.shinyapps.io/p8105_hw6_jr3755/">Problem 2</a>
@@ -223,10 +223,33 @@ $(document).ready(function () {
 </div>
 
 
-<div id="nyc-restaurant-inspection-data" class="section level3">
-<h3>NYC Restaurant Inspection Data</h3>
-<p>The New York City Department of Health and Mental Hygiene (DOHMH) conducts unannounced restaurant inspections on an annual basis in order to check for compliance with policies on food handling, food temperature, personal hygiene of restaurant workers, and vermin control.</p>
-<p>Regulation violations are each worth a pre-specified number of points, which are totaled at the end of the inspection. Scores are converted into grades, where a lower score earns a higher grade. (More details about the scoring and grading process can be found <a href="http://www1.nyc.gov/assets/doh/downloads/pdf/rii/how-we-score-grade.pdf">here</a>.)</p>
+<div id="nyc-restaurant-inspection-data" class="section level2">
+<h2>NYC Restaurant Inspection Data</h2>
+<p><strong>The New York City Department of Health and Mental Hygiene (DOHMH) conducts unannounced restaurant inspections on an annual basis in order to check for compliance with policies on food handling, food temperature, personal hygiene of restaurant workers, and vermin control.</strong></p>
+<p><strong>Regulation violations are each worth a pre-specified number of points, which are totaled at the end of the inspection. Scores are converted into grades, where a lower score earns a higher grade.</strong> (<em>More details about the scoring and grading process can be found <a href="http://www1.nyc.gov/assets/doh/downloads/pdf/rii/how-we-score-grade.pdf">here</a>.</em>)</p>
+</div>
+<div id="processing-steps" class="section level2">
+<h2>Processing steps</h2>
+<p><strong>The dashboard for Problem 1 includes three charts, which are described as below. The dashboard can be found <a href="">here</a>. The Github repo can be found <a href="">here</a>.</strong></p>
+<div id="barchart-cuisine-types" class="section level3">
+<h3>Barchart: Cuisine types</h3>
+<p>We investigated all the restaurants in the dataset to see the distribution of different cuisine types in New York.</p>
+<p>First, we identified distinct restaurants in the dataset using the given unique identifier “camis”, along with their corresponding cuisine descriptions. Then, we counted the number of restaurant for each cuisine type and plotted a bar chart with cuisine type on the X-axis and the number of restaurant on the Y-axis.</p>
+</div>
+<div id="scatterplot-score-comparison-between-2016-and-2017-for-manhattan-restaurants" class="section level3">
+<h3>Scatterplot: Score comparison (between 2016 and 2017) for Manhattan restaurants</h3>
+<p>We selected restaurants in Manhattan with records in both 2016 and 2017 and did a comparison on their maximum annual scores between this year and last year.</p>
+<p>First, we filtered the dataset to include only restaurants in Manhattan and their scores in 2016 and 2017. Then we summarized the maximum annual scores in 2016 and 2017 for each restaurant. Finally, we omitted the restaurants with missing data in either 2016 or 2017 or both and plotted a scatterplot with 2016 maximum annual score on the X-axis and 2017 maximum annual score on the Y-axis.</p>
+</div>
+<div id="boxplot-scores-and-grades" class="section level3">
+<h3>Boxplot: Scores and grades</h3>
+<p>We performed a boxplot to investigate the relationship between grades and scores to see the distribution of scores within and between each grade category.</p>
+<p>We first omitted all the missing values for grade and then plotted a boxplot with grade on the X-axis and score in the Y-axis.</p>
+</div>
+</div>
+<div id="shiny" class="section level2">
+<h2>Shiny</h2>
+<p><strong>We included three widgets in Problem 2, one slider inputs widget on variable “score”, one select inputs widget on variable “grade” and one drop-down menus on variable “boro”. The shiny-enabled dashboard for Problem 2 can be found <a href="https://timrain.shinyapps.io/p8105_hw6_jr3755/">here</a>. The Github repo can be found <a href="">here</a>.</strong></p>
 </div>
 
 

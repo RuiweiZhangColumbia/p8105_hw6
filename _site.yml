@@ -4,7 +4,7 @@ navbar:
   title: "Home"
   right:
     - text: "Problem 1"
-      href: about.html
+      href: p8105_hw6_problem1.html
     - text: "Problem 2"
       href: https://timrain.shinyapps.io/p8105_hw6_jr3755/
     - icon: fa-envelope-o fa-lg
