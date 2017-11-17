@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "name: \"Yay internet!\"\noutput_dir: \".\"\nnavbar:\n  title: \"Home\"\n  right:\n    - text: \"About\"\n      href: about.html\n    - icon: fa-envelope fa-lg\n      href: mailto:<you@youremail.com>\n    - icon: fa-github fa-lg\n      href: http://github.com/<YOUR_GH_NAME>/\noutput:\n  html_document",
+    "created" : 1510884666733.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3304446280",
+    "id" : "EF476B40",
+    "lastKnownWriteTime" : 1495658575,
+    "last_content_update" : 1495658575,
+    "path" : "~/Desktop/Fall 2017/data science/p8105_hw6.github.io/_site.yml",
+    "project_path" : "_site.yml",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}
